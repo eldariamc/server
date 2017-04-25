@@ -40,7 +40,7 @@ public class BlockOre extends Block {
             return 1 + random.nextInt(2);
         if (this == Blocks.CRONYXE_ORE)
             return 1 + random.nextInt(3);*/
-        if (this == Blocks.ELDARIUM_ORE)
+        if (this == Blocks.ELDARIUM_ORE || this == Blocks.XP_ORE)
             return 0;
 
         return super.a(random);
@@ -105,6 +105,8 @@ public class BlockOre extends Block {
                 j1 = MathHelper.nextInt(world.random, 3, 7);
             } else if (this == Blocks.ELDARIUM_ORE) {
                 j1 = MathHelper.nextInt(world.random, 3, 7);
+            } else if (this == Blocks.XP_ORE) {
+                j1 = MathHelper.nextInt(world.random, 7, 12);
             }
 
             return j1;

@@ -401,6 +401,7 @@ public enum Material {
     CRONYXE_BLOCK(220),
     KOBALT_BLOCK(221),
     ELDARIUM_BLOCK(222),
+    XP_ORE(223),
 
     // ---------------------------
 
