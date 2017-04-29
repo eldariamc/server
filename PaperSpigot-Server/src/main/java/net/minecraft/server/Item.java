@@ -232,6 +232,11 @@ public class Item {
         REGISTRY.a(id++, "tomahawk", new ItemTomahawk().c("tomahawk").setTextureName("tomahawk"));
         REGISTRY.a(id++, "chest_orb", new Item().setMaxDurability(5).c("orbChest").setTextureName("chest_orb").a(CreativeModeTab.f).e(1));
         REGISTRY.a(id++, "exploration_boots", new ItemArmor(EnumArmorMaterial.CRONYXE, EnumArmorMaterial.CRONYXE.ordinal(), 3).c("bootsExploration").setTextureName("cronyxe_boots"));
+        REGISTRY.a(id++, "wooden_global_tool", new ItemGlobalTool(EnumToolMaterial.WOOD).c("gtoolWood").setTextureName("wood_global_tool"));
+        REGISTRY.a(id++, "stone_global_tool", new ItemGlobalTool(EnumToolMaterial.STONE).c("gtoolStone").setTextureName("stone_global_tool"));
+        REGISTRY.a(id++, "iron_global_tool", new ItemGlobalTool(EnumToolMaterial.IRON).c("gtoolIron").setTextureName("iron_global_tool"));
+        REGISTRY.a(id++, "golden_global_tool", new ItemGlobalTool(EnumToolMaterial.GOLD).c("gtoolGold").setTextureName("gold_global_tool"));
+        REGISTRY.a(id++, "diamond_global_tool", new ItemGlobalTool(EnumToolMaterial.DIAMOND).c("gtoolDiamond").setTextureName("diamond_global_tool"));
 
         // -----------------------
 
@@ -566,6 +571,8 @@ public class Item {
         REGISTRY.a(id++, itemId, new ItemAxe(material).c("axe" + materialName).setTextureName(itemId));
         itemId = materialId + "_hoe";
         REGISTRY.a(id++, itemId, new ItemHoe(material).c("hoe" + materialName).setTextureName(itemId));
+        itemId = materialId + "_global_tool";
+        REGISTRY.a(id++, itemId, new ItemGlobalTool(material).c("gtool" + materialName).setTextureName(itemId));
 
         return id;
     }

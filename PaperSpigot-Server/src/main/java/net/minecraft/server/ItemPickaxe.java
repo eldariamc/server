@@ -10,39 +10,14 @@ import net.minecraft.util.com.google.common.collect.Sets;
 import java.util.Set;
 
 public class ItemPickaxe extends ItemTool {
-	private static final Set c;
+	public static final Set<Block> c;
 
 	protected ItemPickaxe(EnumToolMaterial var1) {
 		super(2.0F, var1, c);
 	}
 
 	public boolean canDestroySpecialBlock(Block block) {
-		if (block == Blocks.OBSIDIAN || block == Blocks.OBSIDIAN_FURNACE || block == Blocks.BURNING_OBSIDIAN_FURNACE)
-			return this.b.d() >= 3;
-		if (block == Blocks.DIAMOND_BLOCK || block == Blocks.DIAMOND_ORE)
-			return this.b.d() >= 2;
-		if (block == Blocks.EMERALD_ORE || block == Blocks.EMERALD_BLOCK)
-			return this.b.d() >= 2;
-		if (block == Blocks.GOLD_BLOCK || block == Blocks.GOLD_ORE)
-			return this.b.d() >= 2;
-		if (block == Blocks.IRON_BLOCK || block == Blocks.IRON_ORE)
-			return this.b.d() >= 1;
-		if (block == Blocks.LAPIS_BLOCK || block == Blocks.LAPIS_ORE)
-			return this.b.d() >= 1;
-		if (block == Blocks.REDSTONE_ORE || block == Blocks.GLOWING_REDSTONE_ORE)
-			return this.b.d() >= 2;
-		if (block == Blocks.ZINC_ORE || block == Blocks.KOBALT_ORE || block == Blocks.CRONYXE_ORE)
-			return this.b.d() >= 3;
-		if (block == Blocks.ELDARIUM_ORE || block == Blocks.GEMME_ORE)
-			return this.b.d() >= 3;
-		if (block.getMaterial() == Material.STONE || block.getMaterial() == Material.BRICK)
-			return true;
-		if (block.getMaterial() == Material.ORE)
-			return true;
-		if (block == Blocks.ANVIL)
-			return this.b.d() >= 1;
-
-		return false;
+		return canPickaxe(block);
 		
 		//return block == Blocks.OBSIDIAN?this.b.d() == 3:(block != Blocks.DIAMOND_BLOCK && block != Blocks.DIAMOND_ORE?(block != Blocks.EMERALD_ORE && block != Blocks.EMERALD_BLOCK?(block != Blocks.GOLD_BLOCK && block != Blocks.GOLD_ORE?(block != Blocks.IRON_BLOCK && block != Blocks.IRON_ORE?(block != Blocks.LAPIS_BLOCK && block != Blocks.LAPIS_ORE?(block != Blocks.REDSTONE_ORE && block != Blocks.GLOWING_REDSTONE_ORE?(block.getMaterial() == Material.STONE?true:(block.getMaterial() == Material.ORE?true:block.getMaterial() == Material.HEAVY)):this.b.d() >= 2):this.b.d() >= 1):this.b.d() >= 1):this.b.d() >= 2):this.b.d() >= 2):this.b.d() >= 2);
 	}
