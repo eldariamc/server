@@ -4,6 +4,7 @@ import org.bukkit.Chunk;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.World;
+import org.bukkit.entity.LivingEntity;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.metadata.Metadatable;
 
@@ -380,5 +381,22 @@ public interface Block extends Metadatable {
      * @return a list of dropped items for this type of block
      */
     Collection<ItemStack> getDrops(ItemStack tool);
+
+    /**
+     * Returns amount of Exp which would drop by destroying this block
+     *
+     * @return the amount of Exp
+     * @author Dabsunter
+     */
+    int getExpDrop();
+
+    /**
+     * Returns amount of Exp which would drop by destroying this block as provided entity
+     *
+     * @param entity The entity which has break that block
+     * @return the amount of Exp
+     * @author Dabsunter
+     */
+    int getExpDrop(LivingEntity entity);
 
 }

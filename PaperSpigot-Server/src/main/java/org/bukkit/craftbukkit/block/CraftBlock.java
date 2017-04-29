@@ -8,8 +8,11 @@ import org.bukkit.World;
 import org.bukkit.block.*;
 import org.bukkit.block.Block;
 import org.bukkit.craftbukkit.CraftChunk;
+import org.bukkit.craftbukkit.CraftWorld;
+import org.bukkit.craftbukkit.entity.CraftLivingEntity;
 import org.bukkit.craftbukkit.inventory.CraftItemStack;
 import org.bukkit.craftbukkit.util.CraftMagicNumbers;
+import org.bukkit.entity.LivingEntity;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.metadata.MetadataValue;
 import org.bukkit.plugin.Plugin;
@@ -447,6 +450,16 @@ public class CraftBlock implements Block {
         } else {
             return Collections.emptyList();
         }
+    }
+
+    @Override
+    public int getExpDrop() {
+        return getExpDrop(null);
+    }
+
+    @Override
+    public int getExpDrop(LivingEntity entity) {
+        return getNMSBlock().getExpDrop(((CraftWorld)getWorld()).getHandle(), getData(), entity == null ? 0 : EnchantmentManager.getBonusBlockLootEnchantmentLevel(((CraftLivingEntity)entity).getHandle()));
     }
 
     /* Build biome index based lookup table for BiomeBase to Biome mapping */
