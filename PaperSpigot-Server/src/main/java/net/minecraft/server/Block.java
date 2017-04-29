@@ -346,6 +346,7 @@ public class Block {
         REGISTRY.a(id++, "kobalt_block", (new BlockOreBlock(MaterialMapColor.h)).c(5.0F).b(10.0F).a(j).setBlockName("blockKobalt").setBlockTextureName("kobalt_block"));
         REGISTRY.a(id++, "eldarium_block", (new BlockOreBlock(MaterialMapColor.h)).c(5.0F).b(10.0F).a(j).setBlockName("blockEldarium").setBlockTextureName("eldarium_block"));
         REGISTRY.a(id++, "xp_ore", new BlockOre().c(3.0F).b(5.0F).a(i).setBlockName("oreXp").setBlockTextureName("xp_ore"));
+        REGISTRY.a(id++, "lucky_ore", new Block(Material.STONE).a(CreativeModeTab.b).c(3.0F).b(5.0F).a(i).setBlockName("oreLuck").setBlockTextureName("lucky_ore"));
 
 
         // -----------------------

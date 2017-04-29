@@ -402,6 +402,7 @@ public enum Material {
     KOBALT_BLOCK(221),
     ELDARIUM_BLOCK(222),
     XP_ORE(223),
+    LUCKY_ORE(224),
 
     // ---------------------------
 
@@ -632,7 +633,7 @@ public enum Material {
      */
     @Deprecated
     public static Material getMaterial(final int id) {
-        // Keyrisium start - notify undefined IDs in logs (just a reminder for idiots)
+        // Eldaria start - notify undefined IDs in logs (just a reminder for idiots)
         Material result = null;
         if (byId.length > id && id >= 0)
             result = byId[id];
@@ -641,7 +642,7 @@ public enum Material {
             System.err.println("[Dabsunter] Bukkit material ID not found : " + id);
 
         return result;
-        // Keyrisium end
+        // Eldaria end
     }
 
     /**

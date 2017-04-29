@@ -222,6 +222,7 @@ public class Blocks
 	public static final Block KOBALT_BLOCK = (Block)Block.REGISTRY.get("kobalt_block");
 	public static final Block ELDARIUM_BLOCK = (Block)Block.REGISTRY.get("zinc_block");
 	public static final Block XP_ORE = (Block)Block.REGISTRY.get("xp_ore");
+	public static final Block LUCKY_ORE = (Block)Block.REGISTRY.get("lucky_ore");
 
 
 	// -----------------------
