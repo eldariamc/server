@@ -403,6 +403,7 @@ public enum Material {
     ELDARIUM_BLOCK(222),
     XP_ORE(223),
     LUCKY_ORE(224),
+    PEPPERS(225),
 
     // ---------------------------
 
@@ -466,6 +467,7 @@ public enum Material {
     IRON_GLOBAL_TOOL(557, 1, 1561),
     GOLD_GLOBAL_TOOL(558, 1, 1561),
     DIAMOND_GLOBAL_TOOL(559, 1, 1561),
+    PEPPERS_ITEM(560),
 
     // ---------------------------
 

@@ -237,6 +237,7 @@ public class Item {
         REGISTRY.a(id++, "iron_global_tool", new ItemGlobalTool(EnumToolMaterial.IRON).c("gtoolIron").setTextureName("iron_global_tool"));
         REGISTRY.a(id++, "golden_global_tool", new ItemGlobalTool(EnumToolMaterial.GOLD).c("gtoolGold").setTextureName("gold_global_tool"));
         REGISTRY.a(id++, "diamond_global_tool", new ItemGlobalTool(EnumToolMaterial.DIAMOND).c("gtoolDiamond").setTextureName("diamond_global_tool"));
+        REGISTRY.a(id++, "peppers", new ItemSeedFood(4, 0.6F, Blocks.PEPPERS, Blocks.SOIL).j().a(12, 300, 0, 1.0F).c("peppers").setTextureName("peppers"));
 
         // -----------------------
 
