@@ -23,7 +23,7 @@ public class RecipesCrafting {
         // --- Crafts Keyrisium ---
 
         cm.registerShapedRecipe(new ItemStack(Blocks.OBSIDIAN_FURNACE), "###", "#F#", "###", '#', Blocks.OBSIDIAN, 'F', Blocks.FURNACE);
-        cm.registerShapedRecipe(new ItemStack(Blocks.REINFORCED_COBBLESTONE, 2), "##", "##", '#', Blocks.COBBLESTONE);
+        cm.registerShapedRecipe(new ItemStack(Blocks.REINFORCED_OBSIDIAN, 2), "##", "##", '#', Blocks.COBBLESTONE);
         cm.registerShapedRecipe(new ItemStack(Items.COMPACTED_SLIME_BALL), "##", "##", '#', Items.SLIME_BALL);
         cm.registerShapedRecipe(new ItemStack(Blocks.IRON_LADDER), "# #", "###", "# #", '#', Items.IRON_INGOT);
         cm.registerShapedRecipe(new ItemStack(Blocks.SLIME), "###", "#C#", "###", '#', Items.SLIME_BALL, 'C', Items.COMPACTED_SLIME_BALL);

@@ -324,7 +324,7 @@ public class Block {
         Block obsidianFurnace = (new BlockFurnace()).setFurnaceSpeed(2.0).c(50.0F).b(2000.0F).a(i).setBlockName("obsidianFurnace").a(CreativeModeTab.c).setBlockTextureName("obsidian_furnace");
         REGISTRY.a(id++, "obsidian_furnace", obsidianFurnace);
         REGISTRY.a(id++, "lit_obsidian_furnace", new BlockFurnace(obsidianFurnace).setFurnaceSpeed(2.0).c(50.0F).b(2000.0F).a(i).a(0.875F).setBlockName("obsidianFurnace").setBlockTextureName("obsidian_furnace"));
-        REGISTRY.a(id++, "reinforced_cobblestone", new Block(Material.BRICK).c(2.0F).b(10.0F).a(i).setBlockName("reinforcedCobblestone").a(CreativeModeTab.b).setBlockTextureName("reinforced_cobblestone"));
+        REGISTRY.a(id++, "reinforced_obsidian", new Block(Material.BRICK).c(100.0F).b(4000.0F).a(i).setBlockName("reinforcedObsidian").a(CreativeModeTab.b).setBlockTextureName("reinforced_obsidian"));
         REGISTRY.a(id++, "water_pipe", new BlockWaterPipe().c(0.5F).a(0.125F).setBlockName("waterPipe").a(CreativeModeTab.k).setBlockTextureName("water_pipe"));
         REGISTRY.a(id++, "iron_ladder", (new BlockLadder()).c(5.0F).b(10.0F).a(j).setBlockName("ironLadder").setBlockTextureName("iron_ladder"));
         REGISTRY.a(id++, "slime", new BlockSlime().setBlockName("slime").a(soundTypeSlime));

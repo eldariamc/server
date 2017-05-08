@@ -200,7 +200,7 @@ public class Blocks
 
 	public static final BlockFurnace OBSIDIAN_FURNACE = (BlockFurnace)Block.REGISTRY.get("obsidian_furnace");
 	public static final BlockFurnace BURNING_OBSIDIAN_FURNACE = (BlockFurnace)Block.REGISTRY.get("lit_obsidian_furnace");
-	public static final Block REINFORCED_COBBLESTONE = (Block)Block.REGISTRY.get("reinforced_cobbleston");
+	public static final Block REINFORCED_OBSIDIAN = (Block)Block.REGISTRY.get("reinforced_obsidian");
 	public static final BlockWaterPipe WATER_PIPE = (BlockWaterPipe)Block.REGISTRY.get("water_pipe");
 	public static final Block IRON_LADDER = (Block)Block.REGISTRY.get("iron_ladder");
 	public static final Block SLIME = (Block)Block.REGISTRY.get("slime");
