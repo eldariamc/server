@@ -16,6 +16,7 @@ public class RecipesFood {
         // --- Crafts Eldaria ---
 
         cm.registerShapedRecipe(new ItemStack(Items.COOKIE, 6), "SSS", "BBB", 'S', Items.SUGAR, 'B', Items.BREAD);
+        cm.registerShapedRecipe(new ItemStack(Items.GOLDEN_APPLE, 1, 2), "###", "#X#", "###", '#', Items.CRONYXE, 'X', Items.APPLE);
 
         // ----------------------
     }
