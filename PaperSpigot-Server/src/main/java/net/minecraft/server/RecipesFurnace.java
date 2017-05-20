@@ -50,9 +50,8 @@ public class RecipesFurnace {
         this.registerRecipe(Blocks.LAPIS_ORE, new ItemStack(Items.INK_SACK, 1, 4), 0.2F);
         this.registerRecipe(Blocks.QUARTZ_ORE, new ItemStack(Items.QUARTZ), 0.2F);
 
-        // --- Cuissons Keyrisium ---
+        // --- Cuissons Eldaria ---
 
-        this.registerRecipe(Items.COAL, new ItemStack(Items.LIT_COAL), 0.15F);
         this.registerRecipe(Blocks.LIGNITE_ORE, new ItemStack(Items.LIGNITE), 0.1F);
         this.registerRecipe(Blocks.ZINC_ORE, new ItemStack(Items.ZINC), 1.0F);
         this.registerRecipe(Blocks.KOBALT_ORE, new ItemStack(Items.KOBALT), 1.0F);
@@ -60,7 +59,7 @@ public class RecipesFurnace {
         this.registerRecipe(Blocks.ELDARIUM_ORE, new ItemStack(Items.ELDARIUM), 1.0F);
         this.registerRecipe(Blocks.GEMME_ORE, new ItemStack(Items.GEMME), 1.0F);
 
-        // --------------------------
+        // ------------------------
     }
 
     public void registerRecipe(Block block, ItemStack itemstack, float f) {

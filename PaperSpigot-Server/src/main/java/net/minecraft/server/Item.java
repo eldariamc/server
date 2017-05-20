@@ -211,7 +211,7 @@ public class Item {
 
         REGISTRY.a(id++, "compacted_slime_ball", new Item().c("compactedSlimeball").a(CreativeModeTab.f).setTextureName("compacted_slimeball").e(PotionBrewer.rabbitFootEffect));
         REGISTRY.a(id++, "lignite", new Item().c("lignite").a(CreativeModeTab.l).setTextureName("lignite"));
-        REGISTRY.a(id++, "lit_coal", new Item().c("litCoal").a(CreativeModeTab.l).setTextureName("lit_coal"));
+        REGISTRY.a(id++, "donut", new ItemFood(10, false).c("donut").setTextureName("donut"));
         REGISTRY.a(id++, "zinc", new Item().c("zinc").a(CreativeModeTab.l).setTextureName("zinc"));
         REGISTRY.a(id++, "cronyxe", new Item().c("cronyxe").a(CreativeModeTab.l).setTextureName("cronyxe"));
         REGISTRY.a(id++, "kobalt", new Item().c("kobalt").a(CreativeModeTab.l).setTextureName("kobalt"));

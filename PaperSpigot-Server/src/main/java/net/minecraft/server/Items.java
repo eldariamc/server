@@ -177,7 +177,7 @@ public class Items
 	
 	public static final Item COMPACTED_SLIME_BALL = (Item)Item.REGISTRY.get("compacted_slime_ball");
 	public static final Item LIGNITE = (Item)Item.REGISTRY.get("lignite");
-	public static final Item LIT_COAL = (Item)Item.REGISTRY.get("lit_coal");
+	public static final Item DONUT = (Item)Item.REGISTRY.get("donut");
 	public static final Item ZINC = (Item)Item.REGISTRY.get("zinc");
 	public static final Item CRONYXE = (Item)Item.REGISTRY.get("cronyxe");
 	public static final Item KOBALT = (Item)Item.REGISTRY.get("kobalt");

@@ -225,7 +225,7 @@ public class TileEntityWaterPipe extends TileEntity implements IWorldInventory {
 	@Override
 	// isItemValidForSlot
 	public boolean b(int slot, ItemStack item) {
-		return slot == 0 ? item.getItem() == Items.LIT_COAL : item.getItem().m(item);
+		return slot == 0 ? item.getItem() == Items.COAL : item.getItem().m(item);
 	}
 
 	@Override
@@ -345,7 +345,7 @@ public class TileEntityWaterPipe extends TileEntity implements IWorldInventory {
 
 	public boolean activate(EntityHuman player) {
 		if (smokeTime > 0) {
-			//player.addEffect(new MobEffect(potionId, MobEffectList.byId[potionId].isInstant() ? 1 : 2400, 1));
+			player.addEffect(new MobEffect(MobEffectList.CONFUSION.id, 300, 0));
 			if(MobEffectList.byId[potionId].isInstant()) {
 				MobEffectList.byId[potionId].applyInstantEffect(null, player, 1, 1.0);
 			} else {
