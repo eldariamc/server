@@ -16,7 +16,7 @@ public class ContainerWaterPipe extends Container {
 		this.a(new Slot(waterPipe, 0, 70, 9){
 			@Override
 			public boolean isAllowed(ItemStack itemstack) {
-				return itemstack != null && itemstack.getItem() == Items.LIT_COAL;
+				return itemstack != null && itemstack.getItem() == Items.COAL;
 			}
 		});
 		this.a(new SlotBrewing(null, waterPipe, 1, 66, 31));

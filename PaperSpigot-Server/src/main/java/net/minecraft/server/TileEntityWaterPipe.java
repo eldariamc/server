@@ -311,7 +311,7 @@ public class TileEntityWaterPipe extends TileEntity implements IWorldInventory {
 	// updateEntity()
 	public void h() {
 		super.h();
-		if (!world.isStatic && smokeTime == 0 && inventory[0] != null && inventory[0].getItem() == Items.LIT_COAL
+		if (!world.isStatic && smokeTime == 0 && inventory[0] != null && inventory[0].getItem() == Items.COAL
 				&& inventory[1] != null) {
 			Item item = inventory[1].getItem();
 			if (item == Items.SUGAR)
@@ -349,7 +349,7 @@ public class TileEntityWaterPipe extends TileEntity implements IWorldInventory {
 			if(MobEffectList.byId[potionId].isInstant()) {
 				MobEffectList.byId[potionId].applyInstantEffect(null, player, 1, 1.0);
 			} else {
-				player.addEffect(new MobEffect(potionId, 2400, 1));
+				player.addEffect(new MobEffect(potionId, 9600, 1));
 			}
 			this.world.makeSound(player, "random.drink", 5.0F, this.world.random.nextFloat() * 0.1F + 0.9F);
 			smokeTime--;
