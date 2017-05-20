@@ -692,7 +692,7 @@ public enum Material {
         if (result == null) {
             String filtered = name.toUpperCase();
 
-            filtered = filtered.replaceAll("\\s+", "_").replaceAll("\\W", "");
+            filtered = filtered.replaceAll("[\\s-]+", "_").replaceAll("\\W", "");
             result = BY_NAME.get(filtered);
         }
 
