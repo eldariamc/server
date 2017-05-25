@@ -409,7 +409,7 @@ public enum Material {
 
     COMPACTED_SLIME_BALL(500),
     LIGNITE(501),
-    BURNING_COAL(502),
+    DONUT(502),
     VANADIUM_INGOT(503),
     APATITE(504),
     PYRITE(505),
@@ -468,6 +468,7 @@ public enum Material {
     GOLD_GLOBAL_TOOL(558, 1, 1561),
     DIAMOND_GLOBAL_TOOL(559, 1, 1561),
     PEPPERS_ITEM(560),
+    UNCLAIM_FINDER(561),
 
     // ---------------------------
 
