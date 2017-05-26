@@ -13,6 +13,7 @@ public class PlayerInventory implements IInventory {
 
     public ItemStack[] items = new ItemStack[36];
     public ItemStack[] armor = new ItemStack[4];
+    public ItemStack[] orb = new ItemStack[1];
     public int itemInHandIndex;
     public EntityHuman player;
     private ItemStack g;
@@ -129,6 +130,13 @@ public class PlayerInventory implements IInventory {
                 j += itemstack.count;
                 this.armor[k] = null;
             }
+        }
+
+        // Eldaria - Orbe de réparation
+        itemstack = orb[0];
+        if (itemstack != null && (item == null || itemstack.getItem() == item) && (i <= -1 || itemstack.getData() == i)) {
+            j += itemstack.count;
+            this.armor[0] = null;
         }
 
         if (this.g != null) {
@@ -282,6 +290,12 @@ public class PlayerInventory implements IInventory {
             i -= this.items.length;
         }
 
+        // Eldaria - Orbe de réparation
+        if (i >= this.armor.length) {
+            aitemstack = this.orb;
+            i-= this.armor.length;
+        }
+
         if (aitemstack[i] != null) {
             ItemStack itemstack;
 
@@ -310,6 +324,12 @@ public class PlayerInventory implements IInventory {
             i -= this.items.length;
         }
 
+        // Eldaria - Orbe de réparation
+        if (i >= this.armor.length) {
+            aitemstack = this.orb;
+            i-= this.armor.length;
+        }
+
         if (aitemstack[i] != null) {
             ItemStack itemstack = aitemstack[i];
 
@@ -326,6 +346,12 @@ public class PlayerInventory implements IInventory {
         if (i >= aitemstack.length) {
             i -= aitemstack.length;
             aitemstack = this.armor;
+        }
+
+        // Eldaria - Orbe de réparation
+        if (i >= aitemstack.length) {
+            i -= aitemstack.length;
+            aitemstack = this.orb;
         }
 
         aitemstack[i] = itemstack;
@@ -363,6 +389,14 @@ public class PlayerInventory implements IInventory {
             }
         }
 
+        // Eldaria - Orbe de réparation
+        if (this.orb[0] != null) {
+            nbttagcompound = new NBTTagCompound();
+            nbttagcompound.setByte("Slot", (byte) 110);
+            this.orb[0].save(nbttagcompound);
+            nbttaglist.add(nbttagcompound);
+        }
+
         return nbttaglist;
     }
 
@@ -378,17 +412,19 @@ public class PlayerInventory implements IInventory {
             if (itemstack != null) {
                 if (j >= 0 && j < this.items.length) {
                     this.items[j] = itemstack;
-                }
-
-                if (j >= 100 && j < this.armor.length + 100) {
+                } else if (j >= 100 && j < this.armor.length + 100) {
                     this.armor[j - 100] = itemstack;
+                } else
+                // Eldaria - Orbe de réparation
+                if (j >= 110 && j < this.orb.length + 110) {
+                    this.orb[j - 110] = itemstack;
                 }
             }
         }
     }
 
     public int getSize() {
-        return this.items.length + 4;
+        return this.items.length + this.armor.length + this.orb.length;
     }
 
     public ItemStack getItem(int i) {
@@ -397,6 +433,12 @@ public class PlayerInventory implements IInventory {
         if (i >= aitemstack.length) {
             i -= aitemstack.length;
             aitemstack = this.armor;
+        }
+
+        // Eldaria - Orbe de réparation
+        if (i >= aitemstack.length) {
+            i -= aitemstack.length;
+            aitemstack = this.orb;
         }
 
         return aitemstack[i];
@@ -474,6 +516,12 @@ public class PlayerInventory implements IInventory {
                 this.armor[i] = null;
             }
         }
+
+        // Eldaria - Orbe de réparation
+        if (this.orb[0] != null) {
+            this.player.a(this.orb[0], true, false);
+            this.orb[0] = null;
+        }
     }
 
     public void update() {
@@ -512,7 +560,8 @@ public class PlayerInventory implements IInventory {
             }
         }
 
-        return false;
+        // Eldaria - Orbe de réparation
+        return this.orb[0] != null && this.orb[0].doMaterialsMatch(itemstack);
     }
 
     public void startOpen() {}
@@ -533,6 +582,9 @@ public class PlayerInventory implements IInventory {
         for (i = 0; i < this.armor.length; ++i) {
             this.armor[i] = ItemStack.b(playerinventory.armor[i]);
         }
+
+        // Eldaria - Orbe de réparation
+        this.orb[0] = ItemStack.b(playerinventory.orb[0]);
 
         this.itemInHandIndex = playerinventory.itemInHandIndex;
     }

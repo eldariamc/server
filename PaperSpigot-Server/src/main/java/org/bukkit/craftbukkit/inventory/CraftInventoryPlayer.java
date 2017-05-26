@@ -20,7 +20,7 @@ public class CraftInventoryPlayer extends CraftInventory implements org.bukkit.i
 
     @Override
     public int getSize() {
-        return super.getSize() - 4;
+        return super.getSize() - 4 - 1;
     }
 
     public ItemStack getItemInHand() {
@@ -123,6 +123,16 @@ public class CraftInventoryPlayer extends CraftInventory implements org.bukkit.i
             setItem(armorSlot++, null);
         }
         return count;
+    }
+
+    @Override
+    public ItemStack getOrb() {
+        return getItem(40);
+    }
+
+    @Override
+    public void setOrb(ItemStack orb) {
+        setItem(40, orb);
     }
 
     @Override

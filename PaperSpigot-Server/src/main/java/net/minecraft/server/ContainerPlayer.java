@@ -23,14 +23,14 @@ public class ContainerPlayer extends Container {
         this.craftInventory = new InventoryCrafting(this, 2, 2, playerinventory.player); // CraftBukkit - pass player
         this.craftInventory.resultInventory = this.resultInventory; // CraftBukkit - let InventoryCrafting know about its result slot
         this.player = playerinventory; // CraftBukkit - save player
-        this.a((Slot) (new SlotResult(playerinventory.player, this.craftInventory, this.resultInventory, 0, 144, 36)));
+        this.a((Slot) (new SlotResult(playerinventory.player, this.craftInventory, this.resultInventory, 0, 154, 28)));
 
         int i;
         int j;
 
         for (i = 0; i < 2; ++i) {
             for (j = 0; j < 2; ++j) {
-                this.a(new Slot(this.craftInventory, j + i * 2, 88 + j * 18, 26 + i * 18));
+                this.a(new Slot(this.craftInventory, j + i * 2, 98 + j * 18, 18 + i * 18));
             }
         }
 
@@ -47,6 +47,20 @@ public class ContainerPlayer extends Container {
         for (i = 0; i < 9; ++i) {
             this.a(new Slot(playerinventory, i, 8 + i * 18, 142));
         }
+
+        // Eldaria - Orbe de réparation
+        this.a(new Slot(playerinventory, 40, 77, 62)
+        {
+            @Override
+            public int getMaxStackSize() {
+                return 1;
+            }
+
+            @Override
+            public boolean isAllowed(ItemStack itemstack) {
+                return itemstack != null && (itemstack.getItem() instanceof ItemRepairOrb);
+            }
+        });
 
         // this.a((IInventory) this.craftInventory); // CraftBukkit - unneeded since it just sets result slot to empty
     }

@@ -126,5 +126,9 @@ public interface PlayerInventory extends Inventory {
     @Deprecated
     public int clear(int id, int data);
 
+    public ItemStack getOrb();
+
+    public void setOrb(ItemStack orb);
+
     public HumanEntity getHolder();
 }
