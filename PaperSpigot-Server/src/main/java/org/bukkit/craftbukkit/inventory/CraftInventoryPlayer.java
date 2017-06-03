@@ -103,6 +103,7 @@ public class CraftInventoryPlayer extends CraftInventory implements org.bukkit.i
         ItemStack[] items = getContents();
         ItemStack[] armor = getArmorContents();
         int armorSlot = getSize();
+        ItemStack orb = getOrb();
 
         for (int i = 0; i < items.length; i++) {
             ItemStack item = items[i];
@@ -122,6 +123,14 @@ public class CraftInventoryPlayer extends CraftInventory implements org.bukkit.i
             count += item.getAmount();
             setItem(armorSlot++, null);
         }
+
+        if (orb != null
+                && (id < 0 || orb.getTypeId() == id)
+                && (data < 0 || orb.getData().getData() == data)) {
+            count += orb.getAmount();
+            setOrb(null);
+        }
+
         return count;
     }
 
