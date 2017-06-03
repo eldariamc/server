@@ -35,7 +35,7 @@ public class ContainerPlayer extends Container {
         }
 
         for (i = 0; i < 4; ++i) {
-            this.a((Slot) (new SlotArmor(this, playerinventory, playerinventory.getSize() - 1 - i, 8, 8 + i * 18, i)));
+            this.a((Slot) (new SlotArmor(this, playerinventory, 36 + (3 - i), 8, 8 + i * 18, i)));
         }
 
         for (i = 0; i < 3; ++i) {
