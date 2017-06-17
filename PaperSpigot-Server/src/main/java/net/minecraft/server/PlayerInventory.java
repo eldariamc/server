@@ -288,12 +288,12 @@ public class PlayerInventory implements IInventory {
         if (i >= this.items.length) {
             aitemstack = this.armor;
             i -= this.items.length;
-        }
 
-        // Eldaria - Orbe de réparation
-        if (i >= this.armor.length) {
-            aitemstack = this.orb;
-            i-= this.armor.length;
+            // Eldaria - Orbe de réparation
+            if (i >= this.armor.length) {
+                aitemstack = this.orb;
+                i-= this.armor.length;
+            }
         }
 
         if (aitemstack[i] != null) {
@@ -322,12 +322,12 @@ public class PlayerInventory implements IInventory {
         if (i >= this.items.length) {
             aitemstack = this.armor;
             i -= this.items.length;
-        }
 
-        // Eldaria - Orbe de réparation
-        if (i >= this.armor.length) {
-            aitemstack = this.orb;
-            i-= this.armor.length;
+            // Eldaria - Orbe de réparation
+            if (i >= this.armor.length) {
+                aitemstack = this.orb;
+                i-= this.armor.length;
+            }
         }
 
         if (aitemstack[i] != null) {
@@ -346,12 +346,12 @@ public class PlayerInventory implements IInventory {
         if (i >= aitemstack.length) {
             i -= aitemstack.length;
             aitemstack = this.armor;
-        }
 
-        // Eldaria - Orbe de réparation
-        if (i >= aitemstack.length) {
-            i -= aitemstack.length;
-            aitemstack = this.orb;
+            // Eldaria - Orbe de réparation
+            if (i >= aitemstack.length) {
+                i -= aitemstack.length;
+                aitemstack = this.orb;
+            }
         }
 
         aitemstack[i] = itemstack;
@@ -433,12 +433,12 @@ public class PlayerInventory implements IInventory {
         if (i >= aitemstack.length) {
             i -= aitemstack.length;
             aitemstack = this.armor;
-        }
 
-        // Eldaria - Orbe de réparation
-        if (i >= aitemstack.length) {
-            i -= aitemstack.length;
-            aitemstack = this.orb;
+            // Eldaria - Orbe de réparation
+            if (i >= aitemstack.length) {
+                i -= aitemstack.length;
+                aitemstack = this.orb;
+            }
         }
 
         return aitemstack[i];
