@@ -27,7 +27,7 @@ public class BiomeDecorator {
     protected WorldGenerator luckyGen = new WorldGenMinable(Blocks.LUCKY_ORE, 4);
     protected WorldGenerator kobaltGen = new WorldGenMinable(Blocks.KOBALT_ORE, 4);
     protected WorldGenerator xpGen = new WorldGenMinable(Blocks.XP_ORE, 4);
-    protected WorldGenerator eldariumGen = new WorldGenMinable(Blocks.ELDARIUM_ORE, 2);
+    protected WorldGenerator eldariumGen = new WorldGenMinable(Blocks.ELDARIUM_ORE, 1);
     protected WorldGenerator gemmeGen = new WorldGenMinable(Blocks.GEMME_ORE, 1, Blocks.DIAMOND_ORE);
 
     // -------------------------------------
@@ -270,7 +270,7 @@ public class BiomeDecorator {
         this.a(2, this.luckyGen, 2, 17);
         this.a(3, this.kobaltGen, 2, 16);
         this.a(4, this.xpGen, 2, 16);
-        this.a(1, this.eldariumGen, 2, 16);
+        this.a(2, this.eldariumGen, 2, 16);
         this.a(425, this.gemmeGen, 0, 16);
 
         // --------------------------
