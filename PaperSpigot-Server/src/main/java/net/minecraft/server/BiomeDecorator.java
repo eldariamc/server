@@ -270,7 +270,7 @@ public class BiomeDecorator {
         this.a(2, this.luckyGen, 2, 17);
         this.a(3, this.kobaltGen, 2, 16);
         this.a(4, this.xpGen, 2, 16);
-        this.a(2, this.eldariumGen, 2, 12);
+        this.a(3, this.eldariumGen, 2, 12);
         this.a(425, this.gemmeGen, 0, 16);
 
         // --------------------------
