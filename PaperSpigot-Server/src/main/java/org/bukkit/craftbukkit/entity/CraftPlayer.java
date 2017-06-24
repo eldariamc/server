@@ -62,6 +62,9 @@ public class CraftPlayer extends CraftHumanEntity implements Player {
         super(server, entity);
 
         firstPlayed = System.currentTimeMillis();
+
+        // Eldaria - manually register PluginChannel (due to Bungee)
+        channels.add("EldariaClient");
     }
 
     public GameProfile getProfile() {
