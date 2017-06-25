@@ -23,6 +23,7 @@ public class PotionBrewer {
 	public static final String m = "+0-1+2+3+13&4-4";
 	public static final String rabbitFootEffect = "+0+1-2+3&4-4+13";
 	public static final String featherEffect = "+0+1+2-3&4-4+13";
+	public static final String hasteEffect = "+0+1+2+3&4-4+13";
 	private static final HashMap effectDurations = new HashMap();
 	private static final HashMap effectAmplifiers = new HashMap();
 	private static final HashMap p = new HashMap();
@@ -417,6 +418,7 @@ public class PotionBrewer {
 		effectDurations.put(MobEffectList.WATER_BREATHING.getId(), "0 & !1 & 2 & 3 & 2+6");
 		effectDurations.put(MobEffectList.JUMP.getId(), "0 & 1 & !2 & 3 & 3+6");
 		effectDurations.put(MobEffectList.FEATHER_FALLING.getId(),  "0 & 1 & 2 & !3");
+		effectDurations.put(MobEffectList.FASTER_DIG.getId(), "0 & 1 & 2 & 3");
 		effectAmplifiers.put(MobEffectList.FASTER_MOVEMENT.getId(), "5");
 		effectAmplifiers.put(MobEffectList.FASTER_DIG.getId(), "5");
 		effectAmplifiers.put(MobEffectList.INCREASE_DAMAGE.getId(), "5");
@@ -427,5 +429,6 @@ public class PotionBrewer {
 		effectAmplifiers.put(MobEffectList.POISON.getId(), "5");
 		effectAmplifiers.put(MobEffectList.JUMP.getId(), "5");
 		effectAmplifiers.put(MobEffectList.FEATHER_FALLING.getId(), "5");
+		effectAmplifiers.put(MobEffectList.FASTER_DIG.getId(), "5");
 	}
 }

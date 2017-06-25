@@ -18,7 +18,7 @@ public class MobEffectList {
     public static final MobEffectList b = null;
     public static final MobEffectList FASTER_MOVEMENT = (new MobEffectList(1, false, 8171462)).b("potion.moveSpeed").b(0, 0).a(GenericAttributes.d, "91AEAA56-376B-4498-935B-2F7F68070635", 0.20000000298023224D, 2);
     public static final MobEffectList SLOWER_MOVEMENT = (new MobEffectList(2, true, 5926017)).b("potion.moveSlowdown").b(1, 0).a(GenericAttributes.d, "7107DE5E-7CE8-4030-940E-514C1F160890", -0.15000000596046448D, 2);
-    public static final MobEffectList FASTER_DIG = (new MobEffectList(3, false, 14270531)).b("potion.digSpeed").b(2, 0).a(1.5D);
+    public static final MobEffectList FASTER_DIG = (new MobEffectList(3, false, 16764948)).b("potion.digSpeed").b(2, 0).a(1.5D); // couleur origilale : 14270531
     public static final MobEffectList SLOWER_DIG = (new MobEffectList(4, true, 4866583)).b("potion.digSlowDown").b(3, 0);
     public static final MobEffectList INCREASE_DAMAGE = (new MobEffectAttackDamage(5, false, 9643043)).b("potion.damageBoost").b(4, 0).a(GenericAttributes.e, "648D7064-6A60-4F59-8ABE-C2C23A6DD7A9", 3.0D, 2);
     public static final MobEffectList HEAL = (new InstantMobEffect(6, false, 16262179)).b("potion.heal");
@@ -39,7 +39,7 @@ public class MobEffectList {
     public static final MobEffectList HEALTH_BOOST = (new MobEffectHealthBoost(21, false, 16284963)).b("potion.healthBoost").b(2, 2).a(GenericAttributes.maxHealth, "5D6F0BA2-1186-46AC-B896-C61C5CEE99CC", 4.0D, 0);
     public static final MobEffectList ABSORPTION = (new MobEffectAbsorption(22, false, 2445989)).b("potion.absorption").b(2, 2);
     public static final MobEffectList SATURATION = (new InstantMobEffect(23, false, 16262179)).b("potion.saturation");
-    public static final MobEffectList FEATHER_FALLING = new MobEffectList(24, false, 7889559).b("potion.featherFalling");
+    public static final MobEffectList FEATHER_FALLING = new MobEffectList(24, false, 14073852).b("potion.featherFalling");
     public static final MobEffectList A = null;
     public static final MobEffectList B = null;
     public static final MobEffectList C = null;
