@@ -18,7 +18,7 @@ public class ItemGoldenApple extends ItemFood {
 	protected void c(ItemStack var1, World var2, EntityHuman var3) {
 		if(!var2.isStatic) {
 			int damage = var1.getData();
-			var3.addEffect(new MobEffect(damage == 2 ? MobEffectList.HEALTH_BOOST.id : MobEffectList.ABSORPTION.id, 2400, damage == 2 ? 2 :0));
+			var3.addEffect(new MobEffect(damage == 2 ? MobEffectList.HEALTH_BOOST.id : MobEffectList.ABSORPTION.id, 2400, damage == 2 ? 1 :0));
 
 			if (damage > 0) {
 				var3.addEffect(new MobEffect(MobEffectList.REGENERATION.id, damage == 2 ? 160 : 600, damage == 2 ? 1 : 4));
