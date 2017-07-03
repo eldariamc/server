@@ -33,6 +33,8 @@ public class RecipesCrafting {
         cm.registerShapedRecipe(new ItemStack(Blocks.CRONYXE_CHEST), "###", "#C#", "###", '#', Items.CRONYXE, 'C', Blocks.CHEST);
         cm.registerShapedRecipe(new ItemStack(Blocks.KOBALT_CHEST), "###", "#C#", "###", '#', Items.KOBALT, 'C', Blocks.CHEST);
         cm.registerShapedRecipe(new ItemStack(Items.CHEST_ORB), "CG ", "GKG", " G-", 'C', Items.CRONYXE, 'G', Blocks.GLASS, 'K', Items.KOBALT, '-', Items.STICK);
+        cm.registerShapedRecipe(new ItemStack(Items.ELDARIUM), "###",  "###", "###", '#', Items.ELDARIUM_NUGGET);
+        cm.registerShapedRecipe(new ItemStack(Items.ELDARIUM_NUGGET, 9), "#", '#', Items.ELDARIUM);
 
         // ------------------------
     }

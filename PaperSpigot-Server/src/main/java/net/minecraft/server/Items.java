@@ -224,6 +224,8 @@ public class Items
 	public static final Item TOMAHAWK = (Item)Item.REGISTRY.get("tomahawk");
 	public static final Item CHEST_ORB = (Item)Item.REGISTRY.get("chest_orb");
 	public static final Item PEPPERS = (Item)Item.REGISTRY.get("peppers");
+	//TODO: ajouter les arcs
+	public static final Item ELDARIUM_NUGGET = (Item)Item.REGISTRY.get("eldarium_nugget");
 	
 	// -----------------------
 
