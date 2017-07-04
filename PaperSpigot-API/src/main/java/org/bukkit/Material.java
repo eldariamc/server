@@ -469,6 +469,8 @@ public enum Material {
     DIAMOND_GLOBAL_TOOL(559, 1, 1561),
     PEPPERS_ITEM(560),
     UNCLAIM_FINDER(561),
+    //TODO: Ajouter les arcs
+    ELDARIUM_NUGGET(566),
 
     // ---------------------------
 
