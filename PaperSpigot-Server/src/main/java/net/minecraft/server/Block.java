@@ -333,7 +333,7 @@ public class Block {
         REGISTRY.a(id++, "cronyxe_ore", new BlockOre().c(3.0F).b(5.0F).a(i).setBlockName("oreCronyxe").setBlockTextureName("cronyxe_ore"));
         REGISTRY.a(id++, "kobalt_ore", new BlockOre().c(3.0F).b(5.0F).a(i).setBlockName("oreKobalt").setBlockTextureName("kobalt_ore"));
         REGISTRY.a(id++, "eldarium_ore", new BlockOre().c(3.0F).b(5.0F).a(i).setBlockName("oreEldarium").setBlockTextureName("eldarium_ore"));
-        REGISTRY.a(id++, "gemme_ore", new BlockOre().c(3.0F).b(5.0F).a(i).setBlockName("oreGemme").setBlockTextureName("gemme_ore"));
+        id++; // ID dispo
         REGISTRY.a(id++, "greek_tnt", (new BlockTNT(3.0F)).c(0.0F).a(h).setBlockName("greekTnt").setBlockTextureName("greek_tnt"));
         REGISTRY.a(id++, "obsand", new BlockFalling(Material.BRICK).c(50.0F).b(2000.0F).a(i).setBlockName("obsand").a(CreativeModeTab.b).setBlockTextureName("obsand"));
         REGISTRY.a(id++, "mystery_box", new BlockChest(2).c(2.5F).a(i).setBlockName("mysteryBox"));
