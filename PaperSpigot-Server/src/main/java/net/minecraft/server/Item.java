@@ -241,6 +241,8 @@ public class Item {
         REGISTRY.a(id++, "unclaim_finder", new Item().c("unclaimFinder").a(CreativeModeTab.f).setTextureName("unclaim_finder"));
         id += 4; //TODO: Ajouter les arcs
         REGISTRY.a(id++, "eldarium_nugget", new Item().c("eldariumNugget").setTextureName("eldarium_nugget").a(CreativeModeTab.l));
+        REGISTRY.a(id++, "milk_donut", new ItemFood(10, false).j().c("donutMilk").setTextureName("milk_donut"));
+        REGISTRY.a(id++, "chocolate_donut", new ItemFood(11, false).j().a(5, 360, 0, 1.0F).c("donutChoc").setTextureName("chocolate_donut"));
 
         // -----------------------
 

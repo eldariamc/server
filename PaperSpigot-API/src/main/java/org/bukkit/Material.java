@@ -471,6 +471,8 @@ public enum Material {
     UNCLAIM_FINDER(561),
     //TODO: Ajouter les arcs
     ELDARIUM_NUGGET(566),
+    MILK_DONUT(567),
+    CHOCOLATE_DONUT(568),
 
     // ---------------------------
 
@@ -631,6 +633,9 @@ public enum Material {
             case GOLDEN_APPLE:
             case ROTTEN_FLESH:
             case SPIDER_EYE:
+            case DONUT:
+            case MILK_DONUT:
+            case CHOCOLATE_DONUT:
                 return true;
             default:
                 return false;
