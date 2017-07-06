@@ -142,7 +142,7 @@ public class Item {
         REGISTRY.a(354, "cake", (new ItemReed(Blocks.CAKE_BLOCK)).e(1).c("cake").a(CreativeModeTab.h).setTextureName("cake"));
         REGISTRY.a(355, "bed", (new ItemBed()).e(1).c("bed").setTextureName("bed"));
         REGISTRY.a(356, "repeater", (new ItemReed(Blocks.DIODE_OFF)).c("diode").a(CreativeModeTab.d).setTextureName("repeater"));
-        REGISTRY.a(357, "cookie", (new ItemFood(2, 0.1F, false)).j().c("cookie").setTextureName("cookie")); // Toujours mangeable
+        REGISTRY.a(357, "cookie", (new ItemFood(2, 0.1F, false)).c("cookie").setTextureName("cookie"));
         REGISTRY.a(358, "filled_map", (new ItemWorldMap()).c("map").setTextureName("map_filled"));
         REGISTRY.a(359, "shears", (new ItemShears()).c("shears").setTextureName("shears"));
         REGISTRY.a(360, "melon", (new ItemFood(2, 0.3F, false)).c("melon").setTextureName("melon"));
@@ -211,7 +211,7 @@ public class Item {
 
         REGISTRY.a(id++, "compacted_slime_ball", new Item().c("compactedSlimeball").a(CreativeModeTab.f).setTextureName("compacted_slimeball").e(PotionBrewer.rabbitFootEffect));
         REGISTRY.a(id++, "lignite", new Item().c("lignite").a(CreativeModeTab.l).setTextureName("lignite"));
-        REGISTRY.a(id++, "donut", new ItemFood(10, false).c("donut").setTextureName("donut"));
+        REGISTRY.a(id++, "donut", new ItemFood(10, false).j().a(1, 360, 0, 1.0F).c("donut").setTextureName("donut"));
         REGISTRY.a(id++, "zinc", new Item().c("zinc").a(CreativeModeTab.l).setTextureName("zinc"));
         REGISTRY.a(id++, "cronyxe", new Item().c("cronyxe").a(CreativeModeTab.l).setTextureName("cronyxe"));
         REGISTRY.a(id++, "kobalt", new Item().c("kobalt").a(CreativeModeTab.l).setTextureName("kobalt"));
@@ -237,7 +237,7 @@ public class Item {
         REGISTRY.a(id++, "iron_global_tool", new ItemGlobalTool(EnumToolMaterial.IRON).c("gtoolIron").setTextureName("iron_global_tool"));
         REGISTRY.a(id++, "golden_global_tool", new ItemGlobalTool(EnumToolMaterial.GOLD).c("gtoolGold").setTextureName("gold_global_tool"));
         REGISTRY.a(id++, "diamond_global_tool", new ItemGlobalTool(EnumToolMaterial.DIAMOND).c("gtoolDiamond").setTextureName("diamond_global_tool"));
-        REGISTRY.a(id++, "peppers", new ItemSeedFood(4, 0.6F, Blocks.PEPPERS, Blocks.SOIL).j().a(12, 300, 0, 1.0F).e(PotionBrewer.hasteEffect).c("peppers").setTextureName("peppers"));
+        REGISTRY.a(id++, "peppers", new ItemSeedFood(4, 0.6F, Blocks.PEPPERS, Blocks.SOIL).j().a(12, 360, 0, 1.0F).e(PotionBrewer.hasteEffect).c("peppers").setTextureName("peppers"));
         REGISTRY.a(id++, "unclaim_finder", new Item().c("unclaimFinder").a(CreativeModeTab.f).setTextureName("unclaim_finder"));
         id += 4; //TODO: Ajouter les arcs
         REGISTRY.a(id++, "eldarium_nugget", new Item().c("eldariumNugget").setTextureName("eldarium_nugget").a(CreativeModeTab.l));
