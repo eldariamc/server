@@ -8,7 +8,7 @@ public class ItemRepairOrb extends Item {
 	private boolean isFullRepair;
 
 	public ItemRepairOrb(boolean isFullRepair) {
-		this.e(16);
+		this.e(1);
 		this.isFullRepair = isFullRepair;
 	}
 
