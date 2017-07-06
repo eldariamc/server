@@ -78,7 +78,7 @@ public class PacketPlayOutNamedEntitySpawn extends Packet {
 
             packetdataserializer.a(property.getName());
             packetdataserializer.a(property.getValue());
-            packetdataserializer.a(property.getSignature());
+            packetdataserializer.a(String.valueOf(property.getSignature()));
         }
         }
         } else
