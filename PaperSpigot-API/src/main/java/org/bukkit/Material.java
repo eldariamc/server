@@ -389,7 +389,7 @@ public enum Material {
     CRONYXE_ORE(208),
     KOBALT_ORE(209),
     ELDARIUM_ORE(210),
-    GEMME_ORE(211),
+	// ID dispo
     GREEK_TNT(212),
     OBSAND(213),
     MYSTERY_BOX(214),
@@ -414,7 +414,7 @@ public enum Material {
     APATITE(504),
     PYRITE(505),
     COBALT_INGOT(506),
-    GEMME(507),
+	// ID dispo
     ZINC_SWORD(508, 1, 1561),
     ZINC_PICKAXE(509, 1, 1561),
     ZINC_SPADE(510, 1, 1561),

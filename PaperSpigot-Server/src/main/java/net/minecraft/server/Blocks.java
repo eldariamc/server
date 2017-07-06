@@ -209,7 +209,7 @@ public class Blocks
 	public static final Block KOBALT_ORE = (Block)Block.REGISTRY.get("kobalt_ore");
 	public static final Block CRONYXE_ORE = (Block)Block.REGISTRY.get("cronyxe_ore");
 	public static final Block ELDARIUM_ORE = (Block)Block.REGISTRY.get("eldarium_ore");
-	public static final Block GEMME_ORE = (Block)Block.REGISTRY.get("gemme_ore");
+
 	public static final Block GREEK_TNT = (Block)Block.REGISTRY.get("greek_tnt");
 	public static final Block OBSAND = (Block)Block.REGISTRY.get("obsand");
 	public static final BlockChest MYSTERY_BOX = (BlockChest)Block.REGISTRY.get("mystery_box");

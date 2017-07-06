@@ -392,16 +392,18 @@ public class ChunkProviderHell implements IChunkProvider {
             worldgenminable.generate(this.o, this.i, l1, i2, j2);
         }
 
-        // --- Lignite Keyrisium ---
+        // --- Lignite Eldaria ---
+
+        /*worldgenminable = new WorldGenMinable(Blocks.LIGNITE_ORE, 16, Blocks.NETHERRACK);
 
         for (k1 = 0; k1 < 16; ++k1) {
             int x = k = this.i.nextInt(16);
             int y = this.i.nextInt(98) + 20;
             int z = l + this.i.nextInt(16);
-            new WorldGenMinable(Blocks.LIGNITE_ORE, 16, Blocks.NETHERRACK).generate(this.o, this.i, x, y, z);
-        }
+            worldgenminable.generate(this.o, this.i, x, y, z);
+        }*/
 
-        // -------------------------
+        // ------------------------
 
         for (k1 = 0; k1 < 16; ++k1) {
             l1 = k + this.i.nextInt(16);

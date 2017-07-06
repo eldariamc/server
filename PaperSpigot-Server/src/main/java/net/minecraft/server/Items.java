@@ -173,7 +173,7 @@ public class Items
 	public static final Item ACACIA_DOOR = (Item)Item.REGISTRY.get("acacia_door");
 	public static final Item DARK_OAK_DOOR = (Item)Item.REGISTRY.get("dark_oak_door");
 	
-	// --- Items Keyrisium ---
+	// --- Items Eldaria ---
 	
 	public static final Item COMPACTED_SLIME_BALL = (Item)Item.REGISTRY.get("compacted_slime_ball");
 	public static final Item LIGNITE = (Item)Item.REGISTRY.get("lignite");
@@ -182,7 +182,7 @@ public class Items
 	public static final Item CRONYXE = (Item)Item.REGISTRY.get("cronyxe");
 	public static final Item KOBALT = (Item)Item.REGISTRY.get("kobalt");
 	public static final Item ELDARIUM = (Item)Item.REGISTRY.get("eldarium");
-	public static final Item GEMME = (Item)Item.REGISTRY.get("gemme");
+
 	public static final Item ZINC_SWORD = (Item)Item.REGISTRY.get("zinc_sword");
 	public static final Item ZINC_PICKAXE = (Item)Item.REGISTRY.get("zinc_pickaxe");
 	public static final Item ZINC_SHOVEL = (Item)Item.REGISTRY.get("zinc_shovel");

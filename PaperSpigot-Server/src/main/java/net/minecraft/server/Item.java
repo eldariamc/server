@@ -216,7 +216,7 @@ public class Item {
         REGISTRY.a(id++, "cronyxe", new Item().c("cronyxe").a(CreativeModeTab.l).setTextureName("cronyxe"));
         REGISTRY.a(id++, "kobalt", new Item().c("kobalt").a(CreativeModeTab.l).setTextureName("kobalt"));
         REGISTRY.a(id++, "eldarium", new Item().c("eldarium").a(CreativeModeTab.l).setTextureName("eldarium"));
-        REGISTRY.a(id++, "gemme", new Item().c("gemme").a(CreativeModeTab.l).setTextureName("gemme"));
+        id++; // ID dispo
         id = registerTools(id, EnumToolMaterial.ZINC); //508
         id = registerArmor(id, EnumArmorMaterial.ZINC); //513
         id = registerTools(id, EnumToolMaterial.CRONYXE); //517
