@@ -14,7 +14,7 @@ public class ItemRepairOrb extends Item {
 
 	@Override
 	public ItemStack a(ItemStack itemStack, World world, EntityHuman player) {
-		if (!player.abilities.canInstantlyBuild)
+		/*if (!player.abilities.canInstantlyBuild)
 			itemStack.count--;
 
 		world.makeSound(player, "block.enchantment_table.use", 0.5F, 0.4F / (g.nextFloat() * 0.4F + 0.8F));
@@ -23,7 +23,7 @@ public class ItemRepairOrb extends Item {
 			repair(player.inventory.armor);
 			if (isFullRepair)
 				repair(player.inventory.items);
-		}
+		}*/
 
 		return itemStack;
 	}
