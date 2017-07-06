@@ -57,7 +57,6 @@ public class RecipesFurnace {
         this.registerRecipe(Blocks.KOBALT_ORE, new ItemStack(Items.KOBALT), 1.0F);
         this.registerRecipe(Blocks.CRONYXE_ORE, new ItemStack(Items.CRONYXE), 1.0F);
         this.registerRecipe(Blocks.ELDARIUM_ORE, new ItemStack(Items.ELDARIUM), 1.0F);
-        this.registerRecipe(Blocks.GEMME_ORE, new ItemStack(Items.GEMME), 1.0F);
 
         // ------------------------
     }
