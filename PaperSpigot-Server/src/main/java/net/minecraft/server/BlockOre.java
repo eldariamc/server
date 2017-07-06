@@ -22,8 +22,6 @@ public class BlockOre extends Block {
             return Items.QUARTZ;
         if (this == Blocks.LIGNITE_ORE)
             return Items.LIGNITE;
-        if (this == Blocks.GEMME_ORE)
-            return Items.GEMME;
         if (this == Blocks.ELDARIUM_ORE)
             return Items.ELDARIUM_NUGGET;
 

@@ -81,7 +81,7 @@ public class ItemTool extends Item {
 			return this.b.d() >= 2;
 		if (block == Blocks.ZINC_ORE || block == Blocks.KOBALT_ORE || block == Blocks.CRONYXE_ORE)
 			return this.b.d() >= 3;
-		if (block == Blocks.ELDARIUM_ORE || block == Blocks.GEMME_ORE)
+		if (block == Blocks.ELDARIUM_ORE)
 			return this.b.d() >= 3;
 		if (block.getMaterial() == Material.STONE || block.getMaterial() == Material.BRICK)
 			return true;

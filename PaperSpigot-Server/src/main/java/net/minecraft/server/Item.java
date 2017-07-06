@@ -225,8 +225,8 @@ public class Item {
         id = registerArmor(id, EnumArmorMaterial.KOBALT); //531
         id = registerTools(id, EnumToolMaterial.ELDARIUM); //535
         id = registerArmor(id, EnumArmorMaterial.ELDARIUM); //540
-        REGISTRY.a(id++, "repair_orb", new ItemRepairOrb(false).c("orbRepair").a(CreativeModeTab.f).setTextureName("repair_orb"));
-        REGISTRY.a(id++, "divine_orb", new ItemRepairOrb(true).c("orbDivine").a(CreativeModeTab.f).setTextureName("repair_orb"));
+        REGISTRY.a(id++, "repair_orb", new ItemRepairOrb(false).setMaxDurability(900).c("orbRepair").a(CreativeModeTab.f).setTextureName("repair_orb"));
+        REGISTRY.a(id++, "divine_orb", new ItemRepairOrb(true).setMaxDurability(1200).c("orbDivine").a(CreativeModeTab.f).setTextureName("repair_orb"));
         REGISTRY.a(id++, "dynamite", new ItemDynamite().c("dynamite").setTextureName("dynamite"));
         REGISTRY.a(id++, "c4", new ItemC4().c("c4").setTextureName("c4"));
         REGISTRY.a(id++, "tomahawk", new ItemTomahawk().c("tomahawk").setTextureName("tomahawk"));
