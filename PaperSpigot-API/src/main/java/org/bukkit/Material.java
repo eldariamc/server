@@ -410,10 +410,10 @@ public enum Material {
     COMPACTED_SLIME_BALL(500),
     LIGNITE(501),
     DONUT(502),
-    VANADIUM_INGOT(503),
-    APATITE(504),
-    PYRITE(505),
-    COBALT_INGOT(506),
+    ZINC(503),
+    CRONYXE(504),
+    KOBALT(505),
+    ELDARIUM(506),
 	// ID dispo
     ZINC_SWORD(508, 1, 1561),
     ZINC_PICKAXE(509, 1, 1561),
@@ -864,6 +864,19 @@ public enum Material {
             case MAGIC_CHEST:
             case KOBALT_CHEST:
             case CRONYXE_CHEST:
+            case SEA_LANTERN:
+            case SPRUCE_FENCE_GATE:
+            case ACACIA_FENCE_GATE:
+            case BIRCH_FENCE_GATE:
+            case DARK_OAK_FENCE_GATE:
+            case JUNGLE_FENCE_GATE:
+            case SPRUCE_FENCE:
+            case ACACIA_FENCE:
+            case BIRCH_FENCE:
+            case DARK_OAK_FENCE:
+            case JUNGLE_FENCE:
+            case OBSIDIAN_FURNACE:
+            case BURNING_OBSIDIAN_FURNACE:
                 return true;
             default:
                 return false;
@@ -924,6 +937,7 @@ public enum Material {
             case ACTIVATOR_RAIL:
             case CARPET:
             case DOUBLE_PLANT:
+            case BARRIER:
                 return true;
             default:
                 return false;
@@ -976,6 +990,16 @@ public enum Material {
             case LOG_2:
             case ACACIA_STAIRS:
             case DARK_OAK_STAIRS:
+            case SPRUCE_FENCE_GATE:
+            case ACACIA_FENCE_GATE:
+            case BIRCH_FENCE_GATE:
+            case DARK_OAK_FENCE_GATE:
+            case JUNGLE_FENCE_GATE:
+            case SPRUCE_FENCE:
+            case ACACIA_FENCE:
+            case BIRCH_FENCE:
+            case DARK_OAK_FENCE:
+            case JUNGLE_FENCE:
                 return true;
             default:
                 return false;
@@ -1096,6 +1120,9 @@ public enum Material {
             case COAL_BLOCK:
             case LOG_2:
             case PACKED_ICE:
+            case SEA_LANTERN:
+            case OBSIDIAN_FURNACE:
+            case BURNING_OBSIDIAN_FURNACE:
                 return true;
             default:
                 return false;
