@@ -35,6 +35,9 @@ public class RecipesCrafting {
         cm.registerShapedRecipe(new ItemStack(Items.CHEST_ORB), "CG ", "GKG", " G-", 'C', Items.CRONYXE, 'G', Blocks.GLASS, 'K', Items.KOBALT, '-', Items.STICK);
         cm.registerShapedRecipe(new ItemStack(Items.ELDARIUM), "###",  "###", "###", '#', Items.ELDARIUM_NUGGET);
         cm.registerShapedRecipe(new ItemStack(Items.ELDARIUM_NUGGET, 9), "#", '#', Items.ELDARIUM);
+        cm.registerShapedRecipe(new ItemStack(Items.GOLDEN_APPLE, 1, 2), "###", "#A#", "###", '#', Items.KOBALT, 'A', Items.APPLE);
+        cm.registerShapedRecipe(new ItemStack(Items.CHEST_ORB), "###", "#E#", "###", '#', Items.ENDER_PEARL, 'E', Items.ELDARIUM);
+
 
         // ------------------------
     }

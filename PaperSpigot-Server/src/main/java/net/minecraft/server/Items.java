@@ -226,6 +226,17 @@ public class Items
 	public static final Item PEPPERS = (Item)Item.REGISTRY.get("peppers");
 	//TODO: ajouter les arcs
 	public static final Item ELDARIUM_NUGGET = (Item)Item.REGISTRY.get("eldarium_nugget");
+	public static final Item wooden_global_tool = (Item)Item.REGISTRY.get("wooden_global_tool");
+	public static final Item iron_global_tool = (Item)Item.REGISTRY.get("iron_global_tool");
+	public static final Item stone_global_tool = (Item)Item.REGISTRY.get("stone_global_tool");
+	public static final Item golden_global_tool = (Item)Item.REGISTRY.get("golden_global_tool");
+	public static final Item diamond_global_tool = (Item)Item.REGISTRY.get("diamond_global_tool");
+	public static final Item zinc_global_tool = (Item)Item.REGISTRY.get("zinc_global_tool");
+	public static final Item cronyxe_global_tool = (Item)Item.REGISTRY.get("cronyxe_global_tool");
+	public static final Item kobalt_global_tool = (Item)Item.REGISTRY.get("kobalt_global_tool");
+	public static final Item eldarium_global_tool = (Item)Item.REGISTRY.get("eldarium_global_tool");
+	public static final Item MILK_DONUT = (Item)Item.REGISTRY.get("milk_donut");
+	public static final Item CHOCOLATE_DONUT = (Item)Item.REGISTRY.get("chocolate_donut");
 	
 	// -----------------------
 

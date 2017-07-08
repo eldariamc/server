@@ -15,7 +15,9 @@ public class RecipesFood {
 
         // --- Crafts Eldaria ---
 
-        cm.registerShapedRecipe(new ItemStack(Items.DONUT, 6), "SSS", "BBB", 'S', Items.SUGAR, 'B', Items.BREAD);
+        cm.registerShapedRecipe(new ItemStack(Items.DONUT), "SSS", "BBB", 'S', Items.SUGAR, 'B', Items.BREAD);
+        cm.registerShapedRecipe(new ItemStack(Items.CHOCOLATE_DONUT), "PPP", "BBB", 'P', Items.BLAZE_POWDER, 'B', Items.BREAD);
+        cm.registerShapedRecipe(new ItemStack(Items.MILK_DONUT), " M ", "BBB", 'M', Items.MILK_BUCKET, 'B', Items.BREAD);
         cm.registerShapedRecipe(new ItemStack(Items.GOLDEN_APPLE, 1, 2), "###", "#X#", "###", '#', Items.CRONYXE, 'X', Items.APPLE);
 
         // ----------------------

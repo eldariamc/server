@@ -2,7 +2,13 @@ package net.minecraft.server;
 
 public class RecipesTools {
 
-    private String[][] a = new String[][] { { "XXX", " # ", " # "}, { "X", "#", "#"}, { "XX", "X#", " #"}, { "XX", " #", " #"}};
+    private String[][] a = new String[][] {
+            { "XXX", " # ", " # "},
+            { "X", "#", "#"},
+            { "XX", "X#", " #"},
+            { "XX", " #", " #"},
+            { "XXX", "X#X", " # "}
+    };
     private Object[][] b;
 
     public RecipesTools() {
@@ -11,7 +17,8 @@ public class RecipesTools {
             { Items.WOOD_PICKAXE, Items.STONE_PICKAXE, Items.IRON_PICKAXE, Items.DIAMOND_PICKAXE, Items.GOLD_PICKAXE, Items.ZINC_PICKAXE, Items.CRONYXE_PICKAXE, Items.KOBALT_PICKAXE, Items.ELDARIUM_PICKAXE},
             { Items.WOOD_SPADE  , Items.STONE_SPADE  , Items.IRON_SPADE  , Items.DIAMOND_SPADE  , Items.GOLD_SPADE  , Items.ZINC_SHOVEL, Items.CRONYXE_SHOVEL, Items.KOBALT_SHOVEL, Items.ELDARIUM_SHOVEL},
             { Items.WOOD_AXE    , Items.STONE_AXE    , Items.IRON_AXE    , Items.DIAMOND_AXE    , Items.GOLD_AXE    , Items.ZINC_AXE, Items.CRONYXE_AXE, Items.KOBALT_AXE, Items.ELDARIUM_AXE},
-            { Items.WOOD_HOE    , Items.STONE_HOE    , Items.IRON_HOE    , Items.DIAMOND_HOE    , Items.GOLD_HOE    , Items.ZINC_HOE, Items.CRONYXE_HOE, Items.KOBALT_HOE, Items.ELDARIUM_HOE}
+            { Items.WOOD_HOE    , Items.STONE_HOE    , Items.IRON_HOE    , Items.DIAMOND_HOE    , Items.GOLD_HOE    , Items.ZINC_HOE, Items.CRONYXE_HOE, Items.KOBALT_HOE, Items.ELDARIUM_HOE},
+                { null          , null               , null              , null                 , null              , Items.zinc_global_tool, Items.cronyxe_global_tool, Items.kobalt_global_tool, Items.eldarium_global_tool}
         };
     }
 
@@ -21,8 +28,8 @@ public class RecipesTools {
 
             for (int j = 0; j < this.b.length - 1; ++j) {
                 Item item = (Item) this.b[j + 1][i];
-
-                craftingmanager.registerShapedRecipe(new ItemStack(item), new Object[] { this.a[j], Character.valueOf('#'), Items.STICK, Character.valueOf('X'), object});
+                if (this.a[j] != null)
+                    craftingmanager.registerShapedRecipe(new ItemStack(item), new Object[] { this.a[j], Character.valueOf('#'), Items.STICK, Character.valueOf('X'), object});
             }
         }
 
