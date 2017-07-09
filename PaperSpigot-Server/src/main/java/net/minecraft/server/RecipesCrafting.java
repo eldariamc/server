@@ -23,11 +23,11 @@ public class RecipesCrafting {
         // --- Crafts Keyrisium ---
 
         cm.registerShapedRecipe(new ItemStack(Blocks.OBSIDIAN_FURNACE), "###", "#F#", "###", '#', Blocks.OBSIDIAN, 'F', Blocks.FURNACE);
-        cm.registerShapedRecipe(new ItemStack(Blocks.REINFORCED_OBSIDIAN, 2), "##", "##", '#', Blocks.COBBLESTONE);
+        cm.registerShapedRecipe(new ItemStack(Blocks.REINFORCED_OBSIDIAN), "OEO", "EOE", "OEO", 'O', Blocks.OBSIDIAN, 'E', Items.ELDARIUM);
         cm.registerShapedRecipe(new ItemStack(Items.COMPACTED_SLIME_BALL), "##", "##", '#', Items.SLIME_BALL);
         cm.registerShapedRecipe(new ItemStack(Blocks.IRON_LADDER), "# #", "###", "# #", '#', Items.IRON_INGOT);
         cm.registerShapedRecipe(new ItemStack(Blocks.SLIME), "###", "#C#", "###", '#', Items.SLIME_BALL, 'C', Items.COMPACTED_SLIME_BALL);
-        cm.registerShapedRecipe(new ItemStack(Blocks.OBSAND), "##", "G#", '#', Blocks.OBSIDIAN, 'G', Blocks.GRAVEL);
+        //cm.registerShapedRecipe(new ItemStack(Blocks.OBSAND), "##", "G#", '#', Blocks.OBSIDIAN, 'G', Blocks.GRAVEL);
         cm.registerShapedRecipe(new ItemStack(Blocks.WATER_PIPE), "P ", "G ", "BG", 'P', Items.PAPER, 'G', Blocks.THIN_GLASS, 'B', Items.BREWING_STAND);
         cm.registerShapedRecipe(new ItemStack(Blocks.ZINC_CHEST), "###", "#C#", "###", '#', Items.ZINC, 'C', Blocks.CHEST);
         cm.registerShapedRecipe(new ItemStack(Blocks.CRONYXE_CHEST), "###", "#C#", "###", '#', Items.CRONYXE, 'C', Blocks.CHEST);
