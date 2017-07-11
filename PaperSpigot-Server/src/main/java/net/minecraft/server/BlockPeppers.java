@@ -6,10 +6,10 @@ package net.minecraft.server;
 public class BlockPeppers extends BlockCrops {
 
 	protected Item i() {
-		return Items.PEPPERS;
+		return Items.PEPPER;
 	}
 
 	protected Item P() {
-		return Items.PEPPERS;
+		return Items.PEPPER;
 	}
 }

@@ -223,7 +223,7 @@ public class Items
 	public static final Item C4 = (Item)Item.REGISTRY.get("c4");
 	public static final Item TOMAHAWK = (Item)Item.REGISTRY.get("tomahawk");
 	public static final Item CHEST_ORB = (Item)Item.REGISTRY.get("chest_orb");
-	public static final Item PEPPERS = (Item)Item.REGISTRY.get("peppers");
+	public static final Item PEPPER = (Item)Item.REGISTRY.get("pepper");
 	//TODO: ajouter les arcs
 	public static final Item ELDARIUM_NUGGET = (Item)Item.REGISTRY.get("eldarium_nugget");
 	public static final Item wooden_global_tool = (Item)Item.REGISTRY.get("wooden_global_tool");

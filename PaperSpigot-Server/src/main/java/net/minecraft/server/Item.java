@@ -237,7 +237,7 @@ public class Item {
         REGISTRY.a(id++, "iron_global_tool", new ItemGlobalTool(EnumToolMaterial.IRON).c("gtoolIron").setTextureName("iron_global_tool"));
         REGISTRY.a(id++, "golden_global_tool", new ItemGlobalTool(EnumToolMaterial.GOLD).c("gtoolGold").setTextureName("gold_global_tool"));
         REGISTRY.a(id++, "diamond_global_tool", new ItemGlobalTool(EnumToolMaterial.DIAMOND).c("gtoolDiamond").setTextureName("diamond_global_tool"));
-        REGISTRY.a(id++, "peppers", new ItemSeedFood(4, 0.6F, Blocks.PEPPERS, Blocks.SOIL).j().a(12, 360, 0, 1.0F).e(PotionBrewer.hasteEffect).c("peppers").setTextureName("peppers"));
+        REGISTRY.a(id++, "pepper", new ItemSeedFood(4, 0.6F, Blocks.PEPPERS, Blocks.SOIL).j().a(12, 360, 0, 1.0F).e(PotionBrewer.hasteEffect).c("peppers").setTextureName("peppers"));
         REGISTRY.a(id++, "unclaim_finder", new Item().c("unclaimFinder").a(CreativeModeTab.f).setTextureName("unclaim_finder"));
         id += 4; //TODO: Ajouter les arcs
         REGISTRY.a(id++, "eldarium_nugget", new Item().c("eldariumNugget").setTextureName("eldarium_nugget").a(CreativeModeTab.l));
