@@ -25,5 +25,14 @@ public class RecipesWeapons {
 
         craftingmanager.registerShapedRecipe(new ItemStack(Items.BOW, 1), new Object[] { " #X", "# X", " #X", Character.valueOf('X'), Items.STRING, Character.valueOf('#'), Items.STICK});
         craftingmanager.registerShapedRecipe(new ItemStack(Items.ARROW, 4), new Object[] { "X", "#", "Y", Character.valueOf('Y'), Items.FEATHER, Character.valueOf('X'), Items.FLINT, Character.valueOf('#'), Items.STICK});
+
+        // --- Arcs Eldaria ---
+
+        craftingmanager.registerShapedRecipe(new ItemStack(Items.ZINC_BOW), " #X", "# X", " #X", 'X', Items.STRING, '#', Items.ZINC);
+        craftingmanager.registerShapedRecipe(new ItemStack(Items.CRONYXE_BOW), " #X", "# X", " #X", 'X', Items.STRING, '#', Items.CRONYXE);
+        craftingmanager.registerShapedRecipe(new ItemStack(Items.KOBALT_BOW), " #X", "# X", " #X", 'X', Items.STRING, '#', Items.KOBALT);
+        craftingmanager.registerShapedRecipe(new ItemStack(Items.ELDARIUM_BOW), " #X", "# X", " #X", 'X', Items.STRING, '#', Items.ELDARIUM);
+
+        // --------------------
     }
 }

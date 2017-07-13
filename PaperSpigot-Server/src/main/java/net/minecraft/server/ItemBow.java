@@ -6,6 +6,9 @@ public class ItemBow extends Item {
 
     public static final String[] a = new String[] { "pulling_0", "pulling_1", "pulling_2"};
 
+    private double arrowDamage = 2.0;
+    private int arrowKnockback = 0;
+
     public ItemBow() {
         this.maxStackSize = 1;
         this.setMaxDurability(384);
@@ -29,6 +32,9 @@ public class ItemBow extends Item {
             }
 
             EntityArrow entityarrow = new EntityArrow(world, entityhuman, f * 2.0F);
+            // Eldaria - apply custom values
+            entityarrow.b(arrowDamage);
+            entityarrow.knockbackStrength = arrowKnockback;
 
             if (f == 1.0F) {
                 entityarrow.setCritical(true);
@@ -43,7 +49,7 @@ public class ItemBow extends Item {
             int l = EnchantmentManager.getEnchantmentLevel(Enchantment.ARROW_KNOCKBACK.id, itemstack);
 
             if (l > 0) {
-                entityarrow.setKnockbackStrength(l);
+                entityarrow.setKnockbackStrength(entityarrow.knockbackStrength + l);
             }
 
             if (EnchantmentManager.getEnchantmentLevel(Enchantment.ARROW_FIRE.id, itemstack) > 0) {
@@ -105,5 +111,23 @@ public class ItemBow extends Item {
 
     public int c() {
         return 1;
+    }
+
+    public double getArrowDamage() {
+        return arrowDamage;
+    }
+
+    public ItemBow setArrowDamage(double arrowDamage) {
+        this.arrowDamage = arrowDamage;
+        return this;
+    }
+
+    public int getArrowKnockback() {
+        return arrowKnockback;
+    }
+
+    public ItemBow setArrowKnockback(int arrowKnockback) {
+        this.arrowKnockback = arrowKnockback;
+        return this;
     }
 }

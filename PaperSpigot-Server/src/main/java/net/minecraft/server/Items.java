@@ -224,7 +224,10 @@ public class Items
 	public static final Item TOMAHAWK = (Item)Item.REGISTRY.get("tomahawk");
 	public static final Item CHEST_ORB = (Item)Item.REGISTRY.get("chest_orb");
 	public static final Item PEPPER = (Item)Item.REGISTRY.get("pepper");
-	//TODO: ajouter les arcs
+	public static final Item ZINC_BOW = (Item)Item.REGISTRY.get("zinc_bow");
+	public static final Item CRONYXE_BOW = (Item)Item.REGISTRY.get("cronyxe_bow");
+	public static final Item KOBALT_BOW = (Item)Item.REGISTRY.get("kobalt_bow");
+	public static final Item ELDARIUM_BOW = (Item)Item.REGISTRY.get("eldarium_bow");
 	public static final Item ELDARIUM_NUGGET = (Item)Item.REGISTRY.get("eldarium_nugget");
 	public static final Item wooden_global_tool = (Item)Item.REGISTRY.get("wooden_global_tool");
 	public static final Item iron_global_tool = (Item)Item.REGISTRY.get("iron_global_tool");

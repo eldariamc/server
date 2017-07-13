@@ -239,7 +239,10 @@ public class Item {
         REGISTRY.a(id++, "diamond_global_tool", new ItemGlobalTool(EnumToolMaterial.DIAMOND).c("gtoolDiamond").setTextureName("diamond_global_tool"));
         REGISTRY.a(id++, "pepper", new ItemSeedFood(4, 0.6F, Blocks.PEPPERS, Blocks.SOIL).j().a(12, 360, 0, 1.0F).e(PotionBrewer.hasteEffect).c("peppers").setTextureName("peppers"));
         REGISTRY.a(id++, "unclaim_finder", new Item().c("unclaimFinder").a(CreativeModeTab.f).setTextureName("unclaim_finder"));
-        id += 4; //TODO: Ajouter les arcs
+        REGISTRY.a(id++, "zinc_bow", new ItemBow().setArrowDamage(7.0).setMaxDurability(784).c("bowZinc").setTextureName("bow_zinc"));
+        REGISTRY.a(id++, "cronyxe_bow", new ItemBow().setArrowDamage(8.0).setMaxDurability(884).c("bowCronyxe").setTextureName("bow_cronyxe"));
+        REGISTRY.a(id++, "kobalt_bow", new ItemBow().setArrowDamage(9.0).setMaxDurability(984).c("bow_kobalt").setTextureName("bow_kobalt"));
+        REGISTRY.a(id++, "eldarium_bow", new ItemBow().setArrowDamage(10.0).setMaxDurability(1084).c("bowEldarium").setTextureName("bow_eldarium"));
         REGISTRY.a(id++, "eldarium_nugget", new Item().c("eldariumNugget").setTextureName("eldarium_nugget").a(CreativeModeTab.l));
         REGISTRY.a(id++, "milk_donut", new ItemFood(10, false).j().c("donutMilk").setTextureName("milk_donut"));
         REGISTRY.a(id++, "chocolate_donut", new ItemFood(11, false).j().a(5, 360, 0, 1.0F).c("donutChoc").setTextureName("chocolate_donut"));
