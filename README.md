@@ -1,6 +1,6 @@
 Server
 ======
-Il s'agit d'un fork de [PaperSpigot 1.7](PaperMC/Paper-1.7).
+Il s'agit d'un fork de [PaperSpigot 1.7](https://github.com/PaperMC/Paper-1.7).
 Ce dernier a reçus des modifications assez conséquentes afin d'être compatible avec le client moddé.
 
 Modifications
