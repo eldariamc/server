@@ -1,70 +1,42 @@
-PaperSpigot 1.7[![Travis Status](https://travis-ci.org/PaperSpigot/PaperSpigot.svg?branch=master)](https://travis-ci.org/PaperSpigot/PaperSpigot)
-===========
+Server
+======
+Il s'agit d'un fork de [PaperSpigot 1.7](PaperMC/Paper-1.7).
+Ce dernier a reçus des modifications assez conséquentes afin d'être compatible avec le client moddé.
 
-THIS REPO AND VERSION ARE DEPRECATED. NEITHER WILL BE SUPPORTED ANY LONGER.
-===========================================================================
+Modifications
+-------------
+- Beaucoup d'ajouts de blocs/items basique
+- Modification de l'API Bukkit:
+	* Accès au slot de l'orbe
+	* Accès à l'inventaire de la chicha
+- Modification du packet d'ouveture d'inventaire pour les fours customs
+- ... Et beacoup d'autres petites choses essentiels dont j'ai totalement oublié l'existence
+(je n'ai pas toujours utilisé git :unamused:)
 
-We will no longer support PaperSpigot 1.7.10 in any capacity. Given the upcoming release of Minecraft 1.9, and the age of 1.7.10 and its numerous feature and security flaws, it is no longer worth our time to support it in any capacity whatsoever. It is assumed that if you choose to run this outdated version, you know what you're doing and are capable of fixing any issues yourself. Those of you who chose to continue using it, and that plan to continue work with the source, are recommended to fork this repo now, as this official repo will recieve no more support.
+---
+![Logo Eldaria v2](https://eldaria.fr/assets/images/logo.png)
 
-The only potential exception is for security backports, and even then, they will be provided at-will, and should not be expected.
+Eldaria
+=======
+Eldaria est un serveur PvP Factions moddé qui a connus deux versions durant la première moitié de 2017.
+[Site eldaria.fr](https://eldaria.fr)
 
-We recommend users update to 1.8.8, available [here](https://hub.spigotmc.org/stash/projects/PAPER). If that is not an option we, at the very least, recommend jumping ship to 1.9 as soon as it is available. Either way, we're done with 1.7.10. So long, and thanks for all the fish.
+Historique
+----------
+- J'ai rejoins le projet courant janvier 2017 après avoir été contacté par SeR0x42, une connaissance car nous avions un ami en commun.
+- Le serveur ouvre sa première version le 1er avril 2017
+- La v1 se termine prématurément à cause d'un disfonctionnement interne "du haut staff"
+- Le serveur réouvre ses portes pour lancer sa 2e version le 8 juillet 2017
+- Fin juillet 2017, le serveur a finalement subit un "flop", le projet est donc abandonné.
 
-
-
-
-
-
-
-Original readme
------------------------------------------------------
-
-High performance Spigot fork that aims to fix gameplay and mechanics inconsistencies.
-
-DO NOT BUG US FOR SUPPORT FOR 1.7.10. YOU WILL NOT GET ANY.
-
-[IRC Support and Project Discussion](http://irc.spi.gt/iris/?channels=PaperSpigot)
-
-The 1.8 codebase can be found on [SpigotMC's Stash Service here](https://hub.spigotmc.org/stash/projects/PAPER). This repo contains the 1.7 and 1.7.10 with protocol patch codebase.
-
-How To
------------
-
-Init the submodules : `git submodule update --init`
-
-Apply Patches : `./applyPatches.sh`
-
-### Create patch for server ###
-
-`cd PaperSpigot-Server`
-
-Add your file for commit : `git add <file>`
-
-Commit : `git commit -m <msg>`
-
-`cd ..`
-
-Create Patch `./rebuildPatches.sh`
-
-### Create patch for API ###
-
-`cd Paperspigot-API`
-
-Add your file for commit : `git add <file>`
-
-Commit : `git commit -m <msg>`
-
-`cd ..`
-
-Create Patch `./rebuildPatches.sh`
-
-
-
-
-Compilation
------------
-
-We use maven to handle our dependencies.
-
-* Install [Maven 3](http://maven.apache.org/download.html)
-* Clone this repo and: `mvn clean install`
+Équipe
+------
+| Pseudo          | Fonction Principale   | Autre activités                                  |
+| :-------------: | :-------------------: | :----------------------------------------------- |
+| **EnderRaider** | *Administrateur*      | Supervision du site Mineweb (v1), Build...       |
+| **iWarez**      | *Administrateur*      | Configuration de plugins tiers, Build...         |
+| **SeR0x42**     | *Administrateur* (v1) | Communication, Build...                          |
+| **Dabsunter**   | *Administrateur*      | Lead dev client/serveur                          |
+| **Uneo7**       | *SysAdmin*            | Ainsi que *WebMaster* durant la v2               |
+| **LordApo**     | *Web Host* (v1)       | Avait commencé à travailler sur le site de la v2 |
+Il s'agit ici des principales personalités ayant contribué à la réalisation du projet, bien sûr une fois le serveur ouvert, toute une équipe de modération était également présente, ainsi que quelques développeurs de plugins et Community Managers.
